@@ -105,7 +105,6 @@ export function simulate(spell, duration, race, items) {
     for (let i = 0; i < itemCount.total; i++) {
         let set = setFromIteration(i, itemList, itemCount)
         let throughput = calcThroughput(spell, duration, statsFromSet(race.stats, set))
-        //console.log("throuhput: ", throughput, " iteration: ", i)
         if (throughput > result.throughput) {
             result = {
                 throughput,
@@ -115,5 +114,5 @@ export function simulate(spell, duration, race, items) {
     }
     const finalSet = setFromIteration(result.iteration, itemList, itemCount)
     const finalStats = statsFromSet({}, finalSet)
-    return {finalSet, finalStats, ...result}
+    return {finalSet, finalStats, iterations: itemCount.total, ...result}
 }

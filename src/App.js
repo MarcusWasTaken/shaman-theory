@@ -107,11 +107,23 @@ function App() {
                       <tbody>
                         <tr>
                           <td>Iterations: </td>
-                          <td>{result.iteration}</td>
+                          <td>{result.iterations}</td>
                         </tr>
                         <tr>
                           <td>Throughput: </td>
                           <td>{Math.round(result.throughput)}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </fieldset>
+                  <br />
+                  <fieldset>
+                    <legend>Simulation debug</legend>
+                    <table>
+                      <tbody>
+                        <tr>
+                          <td>Seed: </td>
+                          <td>{result.iteration}</td>
                         </tr>
                       </tbody>
                     </table>
