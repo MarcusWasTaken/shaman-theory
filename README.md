@@ -1,3 +1,9 @@
+## About Project
+This project was written early 2020 to help myself and friends to run simulations on different mechanics in the game World of Warcraft.
+It is a pretty quick and dirty codebase built to quickly fill the requirements I had at the time.
+
+Project is currently archived.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
